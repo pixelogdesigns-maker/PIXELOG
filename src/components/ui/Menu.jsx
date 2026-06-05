@@ -47,7 +47,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
                             variants={linkVariants}
                             href={link.href}
                             onClick={toggleMenu}
-                            className="text-4xl md:text-6xl font-unbounded font-black block text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-500 hover:to-[#ff4d00] transition-all duration-300"
+                            className="text-4xl md:text-6xl font-unbounded font-black block text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-500 hover:to-[#FFE600] transition-all duration-300"
                         >
                             {link.title}
                         </motion.a>

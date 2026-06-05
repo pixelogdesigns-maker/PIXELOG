@@ -31,17 +31,17 @@ const whyus = [
 
 const WhyUs = () => {
     return (
-        <Section id="whyus" className="py-32 bg-white relative">
+        <Section id="whyus" className="py-32 bg-transparent relative">
             <div className="max-w-7xl mx-auto px-5">
                 <div className="mb-20 text-center md:text-left">
-                    <span className="text-[#ff4d00] font-bold tracking-widest uppercase text-sm mb-4 block">Values</span>
+                    <span className="text-[#FFE600] font-bold tracking-widest uppercase text-sm mb-4 block">Values</span>
                     <motion.h2
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="text-5xl md:text-7xl font-black font-unbounded text-black leading-tight"
+                        className="text-5xl md:text-7xl font-black font-unbounded text-white leading-tight"
                     >
-                        Why Choose Us<span className="text-[#ff4d00]">.</span>
+                        Why Choose Us<span className="text-[#FFE600]">.</span>
                     </motion.h2>
                 </div>
 
@@ -53,11 +53,11 @@ const WhyUs = () => {
                             transition={{ delay: index * 0.1 }}
                             viewport={{ once: true }}
                             key={index}
-                            className="bg-[#f9f9f9] p-10 rounded-[2rem] hover:bg-black hover:text-white transition-all duration-300 group cursor-default"
+                            className="bg-zinc-900/40 border border-white/5 p-10 rounded-[2rem] hover:bg-zinc-900 hover:border-[#FFE600]/30 transition-all duration-300 group cursor-default"
                         >
-                            <div className="text-4xl font-black text-[#ff4d00] mb-6 font-unbounded">0{index + 1}</div>
-                            <h3 className="text-2xl font-bold mb-4 font-sora group-hover:text-white text-black">{item.title}</h3>
-                            <p className="text-zinc-500 leading-relaxed font-sora text-sm group-hover:text-zinc-400">{item.para}</p>
+                            <div className="text-4xl font-black text-[#FFE600] mb-6 font-unbounded">0{index + 1}</div>
+                            <h3 className="text-2xl font-bold mb-4 font-sora text-white group-hover:text-[#FFE600] transition-colors">{item.title}</h3>
+                            <p className="text-zinc-400 leading-relaxed font-sora text-sm group-hover:text-zinc-300">{item.para}</p>
                         </motion.div>
                     ))}
                 </div>

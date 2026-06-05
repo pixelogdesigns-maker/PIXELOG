@@ -8,6 +8,8 @@ import Lenis from 'lenis';
 import { AnimatePresence } from 'framer-motion';
 import Preloader from './components/ui/Preloader';
 import ScrollToTop from './components/ui/ScrollToTop';
+import CustomCursor from './components/ui/CustomCursor';
+import ScrollProgress from './components/ui/ScrollProgress';
 
 import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -41,7 +43,10 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
-      <div className="w-full min-h-screen bg-white text-black font-sora selection:bg-[#ff4d00] selection:text-white">
+      <ScrollProgress />
+      <CustomCursor />
+      
+      <div className="w-full min-h-screen bg-[#0d0d0d] text-zinc-100 font-sora selection:bg-[#FFE600] selection:text-black">
 
         <div className="grain"></div>
 
@@ -49,7 +54,7 @@ const App = () => {
           {isLoading && <Preloader setLoading={setIsLoading} />}
         </AnimatePresence>
 
-        <ToastContainer position="bottom-right" theme="light" />
+        <ToastContainer position="bottom-right" theme="dark" />
 
         <Navbar />
 

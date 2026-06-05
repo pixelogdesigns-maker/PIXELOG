@@ -37,19 +37,19 @@ const Preloader = ({ setLoading }) => {
         <motion.div
             initial={{ y: 0 }}
             exit={{ y: "-100%", transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }}
-            className="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-white text-black"
+            className="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#0d0d0d] text-white"
         >
             <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 key={index}
-                className="text-5xl md:text-7xl font-black tracking-tighter font-unbounded text-black"
+                className="text-5xl md:text-7xl font-black tracking-tighter font-unbounded text-white"
             >
-                {words[index]}<span className="text-[#ff4d00]">.</span>
+                {words[index]}<span className="text-[#FFE600]">.</span>
             </motion.p>
 
             <div className="absolute bottom-10 right-10 flex flex-col items-end">
-                <span className="text-6xl font-black font-unbounded text-[#ff4d00]">
+                <span className="text-6xl font-black font-unbounded text-[#FFE600]">
                     {width}%
                 </span>
             </div>
